@@ -1,10 +1,16 @@
 class FourCal:
-    def setData(self, first, second):
+    def __init__(self, first, second):
         self.first = first
         self.second = second
 
-a = FourCal()
-a.setData(4,2)
+    def setData(self, first, second):
+        self.first = first
+        self.second = second
+    
+    def add(self):
+        result = self.first + self.second
+        return result
 
-print(a.first)
-print(a.second)
+a = FourCal(4,2)
+
+print(a.add())
